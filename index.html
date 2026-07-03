@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rosie | Plataforma Educacional Socioemocional</title>
+<style>
+:root {
+  --pink:#f51f72; --purple:#6d35d9; --navy:#0b1550; --green:#20a857;
+  --bg:#fff7fb; --text:#12184d; --muted:#62678a; --line:#eee7f5;
+}
+* { box-sizing:border-box; }
+body { margin:0; font-family:Inter,Arial,sans-serif; background:linear-gradient(180deg,#fff,#fff7fb,#f6f2ff); color:var(--text); }
+.container { width:min(1160px,92vw); margin:auto; }
+header { position:sticky; top:0; z-index:10; background:rgba(255,255,255,.88); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+nav { height:72px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.logo { font-size:42px; font-family:Georgia,serif; font-weight:900; font-style:italic; color:var(--pink); }
+.menu { display:flex; gap:20px; font-size:14px; font-weight:700; }
+a { color:inherit; text-decoration:none; }
+.btn { display:inline-block; padding:14px 22px; border-radius:999px; background:var(--pink); color:#fff; font-weight:800; box-shadow:0 12px 30px rgba(245,31,114,.25); }
+.hero { padding:86px 0 60px; }
+.hero-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:42px; align-items:center; }
+.eyebrow { display:inline-block; padding:9px 15px; background:#fff; border:1px solid var(--line); border-radius:999px; color:var(--purple); font-weight:800; }
+h1 { font-size:64px; line-height:1; margin:22px 0 18px; letter-spacing:-3px; }
+h1 span, h2 span { color:var(--pink); }
+.lead { font-size:21px; line-height:1.45; color:#343a68; max-width:650px; }
+.visual, .card { background:#fff; border:1px solid var(--line); border-radius:28px; box-shadow:0 20px 55px rgba(30,20,80,.10); }
+.visual { padding:18px; }
+.visual img { width:100%; display:block; border-radius:20px; }
+section { padding:70px 0; }
+.title { text-align:center; margin-bottom:34px; }
+.title h2 { font-size:44px; margin:0 0 12px; letter-spacing:-1.5px; }
+.title p { color:var(--muted); font-size:18px; line-height:1.55; max-width:800px; margin:auto; }
+.grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.grid2 { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+.card { padding:28px; }
+.icon { width:58px; height:58px; border-radius:18px; display:grid; place-items:center; font-size:28px; margin-bottom:16px; background:#ffe1ee; }
+.card h3 { font-size:23px; margin:0 0 10px; }
+.card p { color:var(--muted); line-height:1.55; margin:0; }
+.split { display:grid; grid-template-columns:1fr 1fr; gap:34px; align-items:center; }
+.pills { display:grid; grid-template-columns:repeat(2,1fr); gap:13px; }
+.pill { background:#fff; border:1px solid var(--line); border-radius:18px; padding:14px 16px; font-weight:800; }
+.band { background:linear-gradient(135deg,var(--navy),var(--purple),var(--pink)); color:white; border-radius:36px; padding:46px; box-shadow:0 22px 60px rgba(30,20,80,.18); }
+.band h2 { font-size:42px; margin:0 0 14px; }
+.band p { font-size:18px; line-height:1.6; opacity:.93; }
+.modules { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:22px; }
+.module { border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.11); border-radius:24px; padding:24px; }
+.module h3 { margin-top:0; }
+footer { background:#fff; border-top:1px solid var(--line); padding:32px 0; color:var(--muted); }
+.cta { text-align:center; }
+.cta-box { background:white; border:1px solid var(--line); border-radius:38px; padding:56px; box-shadow:0 20px 55px rgba(30,20,80,.10); }
+@media(max-width:900px) { .hero-grid,.split,.grid3,.grid2,.modules{grid-template-columns:1fr} h1{font-size:44px} .menu{display:none} .pills{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Rosie</div>
+      <div class="menu">
+        <a href="#problema">Problema</a><a href="#solucao">Solução</a><a href="#app">App</a><a href="#dashboard">Dashboard</a><a href="#ia">IA</a>
+      </div>
+      <a href="#contato" class="btn">Conhecer</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">IA + Socioemocional + Pertencimento</div>
+      <h1>Transformando <span>emoções</span> em conexões.</h1>
+      <p class="lead">A Rosie é uma plataforma educacional socioemocional assistida por IA para fortalecer pertencimento, bem-estar e desenvolvimento integral nos primeiros anos escolares.</p>
+      <a class="btn" href="#solucao">Ver solução</a>
+    </div>
+    <div class="visual"><img src="assets/rosie_image_1.png" alt="Pilares da Rosie"></div>
+  </div>
+</section>
+
+<section id="problema">
+  <div class="container">
+    <div class="title">
+      <h2>O problema que a Rosie resolve</h2>
+      <p>Escolas precisam enxergar o bem-estar emocional dos alunos, agir preventivamente e criar comunidades escolares mais acolhedoras.</p>
+    </div>
+    <div class="grid3">
+      <div class="card"><div class="icon">💔</div><h3>Falta de pertencimento</h3><p>Alunos isolados ou desconectados têm mais dificuldade de participar, aprender e construir relações saudáveis.</p></div>
+      <div class="card"><div class="icon">🧠</div><h3>Bem-estar invisível</h3><p>Mudanças emocionais muitas vezes só são percebidas quando já se tornaram conflitos ou crises.</p></div>
+      <div class="card"><div class="icon">📊</div><h3>Gestão sem dados</h3><p>Educadores e gestores precisam de indicadores claros para orientar decisões pedagógicas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="solucao">
+  <div class="container split">
+    <div>
+      <div class="title" style="text-align:left">
+        <h2>Uma plataforma institucional</h2>
+        <p>A Rosie une App da Turma, Dashboard Institucional e IA responsável para apoiar alunos, educadores e escolas.</p>
+      </div>
+      <div class="pills">
+        <div class="pill">💗 Check-ins socioemocionais</div>
+        <div class="pill">🛤️ Trilhas de desenvolvimento</div>
+        <div class="pill">👤 Avatar socioemocional</div>
+        <div class="pill">🏫 Mural da turma</div>
+        <div class="pill">🎯 Missões colaborativas</div>
+        <div class="pill">🏆 Ranking por turma</div>
+      </div>
+    </div>
+    <div class="visual"><img src="assets/rosie_image_2.jpeg" alt="Trilhas socioemocionais"></div>
+  </div>
+</section>
+
+<section id="app">
+  <div class="container split">
+    <div class="visual"><img src="assets/rosie_image_3.png" alt="App da Turma"></div>
+    <div>
+      <h2>App da Turma</h2>
+      <p class="lead">Ambiente lúdico e seguro para crianças de 6 a 10 anos expressarem emoções, participarem de missões, evoluírem nas trilhas e construírem pertencimento com a turma.</p>
+      <div class="grid2">
+        <div class="card"><h3>Expressão segura</h3><p>Check-ins e mural para ouvir os alunos com cuidado.</p></div>
+        <div class="card"><h3>Gamificação saudável</h3><p>Avatar, conquistas e medalhas sem competição individual tóxica.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dashboard">
+  <div class="container split">
+    <div>
+      <h2>Dashboard Institucional</h2>
+      <p class="lead">Transforma dados do App da Turma em inteligência para professores, coordenação e gestão escolar.</p>
+      <div class="grid2">
+        <div class="card"><h3>Clima e bem-estar</h3><p>Acompanha emoções, participação e evolução da turma.</p></div>
+        <div class="card"><h3>Pertencimento</h3><p>Monitora inclusão, conexão e possíveis sinais de isolamento.</p></div>
+        <div class="card"><h3>Desenvolvimento</h3><p>Mostra evolução nas competências socioemocionais.</p></div>
+        <div class="card"><h3>Alertas preventivos</h3><p>Apoia intervenções pedagógicas no momento certo.</p></div>
+      </div>
+    </div>
+    <div class="visual"><img src="assets/rosie_image_4.png" alt="Dashboard institucional"></div>
+  </div>
+</section>
+
+<section id="ia">
+  <div class="container">
+    <div class="band">
+      <h2>IA responsável, humana e preventiva</h2>
+      <p>A IA da Rosie não substitui educadores e não realiza diagnósticos clínicos. Ela organiza dados, identifica padrões, recomenda atividades e apoia decisões pedagógicas para fortalecer bem-estar, pertencimento e desenvolvimento socioemocional.</p>
+      <div class="modules">
+        <div class="module"><h3>Para educadores</h3><p>Resumos, alertas, recomendações e indicadores claros.</p></div>
+        <div class="module"><h3>Para alunos</h3><p>Jornadas personalizadas, missões adequadas e evolução lúdica.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="cta">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Vamos construir escolas mais humanas?</h2>
+      <p>Conheça a Rosie e veja como pertencimento, dados e IA responsável podem apoiar o desenvolvimento integral das crianças.</p>
+      <a class="btn" href="mailto:fsfec2010@gmail.com?subject=Quero conhecer a Rosie">Falar com a Rosie</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">Rosie — Plataforma Educacional Socioemocional • IA responsável • Pertencimento escolar</div>
+</footer>
+</body>
+</html>
